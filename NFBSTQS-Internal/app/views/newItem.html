@@ -1,0 +1,190 @@
+﻿ <table class="table table-bordered">
+                            <thead>
+                                <th>Section</th>
+                                <th>Insured Items</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="col-xs-3">
+                                        <div class="input-group">
+                                           
+                                                <span class="input-group-btn">
+                                                <a class="btn btn-danger" href='#' data-bind='click: close'>
+                                                    <span class="fa fa-trash-o"></span>
+                                                </a>
+                                            </span>
+                                            <select data-bind="options: load(),
+    optionsText: 'SectionName',
+    optionsValue: 'SectionId',
+    optionsCaption: 'Select section',
+    value: SectionId(),
+    event: { change: $root.loadAllChildrenOfSection }"
+                                                class=" form-group combobox form-control btn btn-default dropdown-toggle btn-select2"
+                                                name="inline"
+                                                id="cmbsections">
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <table class="table">
+                                            <tr>
+                                                <th>Description</th>
+                                                <th>Value</th>
+                                                <th>Loadings</th>
+                                                <th>Discounts</th>
+                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-xs-3">
+                                                        <input id="txtItemDescription" type="text" class="form-control" data-bind='value: ItemDescription' />
+                                                    </td>
+                                                    <td>
+                                                        <input id="txtItemValue" type="text" class="form-control" data-bind='value: ItemValue, event: { change: checkRating }' />
+                                                    </td>
+
+                                                    <td class="col-xs-3">
+                                                        <select id="ddlLoadings" class="form-control" multiple="multiple" data-bind="options: allLoadings(), optionsText: 'LoadingDescription', optionsValue: 'LoadingRate', selectedOptions: valueOfSelectedLoading " name="D1">
+                                                        </select>
+                                                    </td>
+                                                    <td class="col-xs-3">
+                                                        <select id="ddlDiscounts" class="form-control" multiple="multiple" data-bind="options: allDiscounts(), optionsText: 'DiscountDescription', optionsValue: 'DiscountRate', selectedOptions: valueOfSelectedDiscount " name="D2">
+                                                        </select>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Monthly Premium</td>
+                                                    <td>
+                                                        <input id="txtmonthlyPremium" type="text" data-bind="value: monthlyPremiumCalcu" disabled />
+                                                    </td>
+                                                    <td>
+                                                        <input id="txtgetCalcOfSelectedLoadingTimesItemValue" type="text" data-bind="value: getCalcOfSelectedLoadingTimesItemValue" disabled />
+                                                    </td>
+                                                    <td>
+                                                        <input id="txtgetCalcOfSelectedDiscountTimesItemValue" type="text" data-bind="value: getCalcOfSelectedDiscountTimesItemValue" disabled />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Annual Premium</td>
+                                                    <td>
+                                                        <input id="txtAnnual" type="text" data-bind="value: valueOfRelevantRating" disabled />
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <br />
+                                        <a href='#' class="btn btn-success" data-bind='click: $root.save'>Add Item</a> <a href='#' class="btn btn-warning" data-bind='click: $root.close'>Cancel</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+<!--<div>
+    <span class="label label-default">Add new fee</span>
+
+    <div class="well">
+        <table class="table table-condensed">
+            <tr>
+                <td>Category</td>
+                <td>
+                    <select data-bind="options: load(), optionsText: 'SectionName', optionsValue: 'SectionId', value: SectionId">
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Item Description</td>
+                <td>
+                    <input type="text" data-bind='value: ItemDescription'/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Value (R)</td>
+                <td>
+                    <input type="text" data-bind='value: ItemValue'/>
+                </td>
+            </tr>
+ 
+            <tr>
+                <td>Annual Premium</td>
+                <td>
+                    <input type="text" disabled data-bind='value: MonthlyPremium' />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Monthly Premium</td>
+                <td>
+                    <input type="text" disabled data-bind='value: AnnualPremium'  />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Commision Content</td>
+                <td>
+                    <input type="text" disabled/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Loadings</td>
+                <td>
+                    <div>
+                        <form role="form">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Unoccupancy</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Construction</label>
+                            </div>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" value="">JHB</label>
+                            </div>
+                        </form>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Discounts</td>
+                <td>
+                    <div>
+                        <form role="form">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Gear Lock</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Tracker</label>
+                            </div>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" value="">Alarm</label>
+                            </div>
+                        </form>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-success" data-bind="click: save" >Save</button>
+
+                </td>
+                <td>
+                    <button type="button" class="btn btn-warning" data-bind="click: close" >Cancel</button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>-->

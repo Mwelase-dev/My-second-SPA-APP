@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backends", "Backends", "{E4588846-D27B-499E-996B-D9A4BA7B4FE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QsClasses", "QsClasses\QsClasses.csproj", "{5E0E5194-3016-421D-AFDF-E007CDACD5F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QsDataAccess", "QsDataAccess\QsDataAccess.csproj", "{58D72E32-0321-4FBC-B372-06645EE74DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFBSTQS-Internal", "NFBSTQS-Internal\NFBSTQS-Internal.csproj", "{B65ACD9D-259E-44B4-B580-85704AE7C878}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "__Documents", "__Documents", "{AEEB54A0-FEAD-4AD7-BB73-AF54B3B8F24A}"
+	ProjectSection(SolutionItems) = preProject
+		..\Backup 20150129\Copy of Quotation  J  Soap (4).xlsx = ..\Backup 20150129\Copy of Quotation  J  Soap (4).xlsx
+		..\Backup 20150129\Quotation  J. Soap.xlsx = ..\Backup 20150129\Quotation  J. Soap.xlsx
+		..\ShortTermQS.sql = ..\ShortTermQS.sql
+		..\..\..\STQ weekend2 b.sql = ..\..\..\STQ weekend2 b.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QsSecurity", "QsSecurity\QsSecurity.csproj", "{418059CF-9AD4-41BE-8A09-2271D2E6471E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E0E5194-3016-421D-AFDF-E007CDACD5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0E5194-3016-421D-AFDF-E007CDACD5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0E5194-3016-421D-AFDF-E007CDACD5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0E5194-3016-421D-AFDF-E007CDACD5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D72E32-0321-4FBC-B372-06645EE74DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D72E32-0321-4FBC-B372-06645EE74DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D72E32-0321-4FBC-B372-06645EE74DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D72E32-0321-4FBC-B372-06645EE74DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65ACD9D-259E-44B4-B580-85704AE7C878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65ACD9D-259E-44B4-B580-85704AE7C878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65ACD9D-259E-44B4-B580-85704AE7C878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65ACD9D-259E-44B4-B580-85704AE7C878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418059CF-9AD4-41BE-8A09-2271D2E6471E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418059CF-9AD4-41BE-8A09-2271D2E6471E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418059CF-9AD4-41BE-8A09-2271D2E6471E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418059CF-9AD4-41BE-8A09-2271D2E6471E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E0E5194-3016-421D-AFDF-E007CDACD5F1} = {E4588846-D27B-499E-996B-D9A4BA7B4FE5}
+		{58D72E32-0321-4FBC-B372-06645EE74DA5} = {E4588846-D27B-499E-996B-D9A4BA7B4FE5}
+		{418059CF-9AD4-41BE-8A09-2271D2E6471E} = {E4588846-D27B-499E-996B-D9A4BA7B4FE5}
+	EndGlobalSection
+EndGlobal

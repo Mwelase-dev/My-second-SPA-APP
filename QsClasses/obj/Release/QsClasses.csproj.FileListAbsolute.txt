@@ -1,0 +1,7 @@
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Release\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Release\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Release\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Release\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Release\QsClasses.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Release\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Release\QsClasses.pdb

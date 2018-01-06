@@ -1,0 +1,203 @@
+﻿<div class="form-group">
+    <div class="page">
+
+        <div class="row" id="logos">
+
+            <div class="col-xs-4">
+                <!--<img src="https://quotes.nfbst.co.za/images/Hollard.png" style="padding-left: 0%; padding-top: 8%;" />-->
+                <img src="../../images/Hollard.png" style="padding-left: 0%; padding-top: 8%;" />
+
+            </div>
+
+            <div class="col-xs-4">
+                <!--<img src="https://quotes.nfbst.co.za/images/NFB_300_147_90.jpg" />-->
+               <img src="../../images/NFB_300_147_90.jpg" style="padding-left: 0%; padding-top: 8%;" />
+
+            </div>
+            <div class="col-xs-4">
+                <!--<img src="https://quotes.nfbst.co.za/images/Fia.png" style="padding-top: 3%; padding-left: 57%; padding-top: 10%;" />-->
+                          <img src="../../images/fia.png" style="padding-left: 0%; padding-top: 8%;" />
+
+            </div>
+
+        </div>
+        <br />
+
+        <div id="quoteReport" class="printing">
+
+            <div class="row">
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-4">
+                    <h3><span style="margin-left: 13%;" class="label label-default">Insurance Quotation</span></h3>
+                </div>
+                <div class="col-xs-4">
+                </div>
+            </div>
+            <br />
+
+            <div data-bind="with: $root.quoteToPrint">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h5>The Insured </h5>
+                    </div>
+                    <div class="col-xs-9">
+                        <h5 data-bind='text: ClientName'></h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h5>Mobile number</h5>
+                    </div>
+                    <div class="col-xs-9">
+                        <h5 data-bind='text: ContactNumber'></h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h5>Period of insurance</h5>
+                    </div>
+                    <div class="col-xs-9">
+                        <h5>Quote is valid for 30 days</h5>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <table class="table">
+                <tr>
+                    <th>Section</th>
+                    <th>Description</th>
+                    <th>Comments</th>
+                    <th style="text-align: right">Sums Insured</th>
+                    <th style="text-align: right">Monthly Premium</th>
+                </tr>
+                <tbody data-bind="foreach: $root.items()">
+                    <tr>
+                        <td data-bind="text: SectionDisplay"></td>
+                        <td>
+                            <h5 style="font-weight: bold; margin: auto" data-bind="text: ItemDescription"></h5>
+
+                            <div data-bind="foreach: QuoteWarrantiesDisplay">
+                                <h5 data-bind="text: $data"></h5>
+                            </div>
+
+                            <div data-bind="foreach: InsuredItemDiscountsDisplay">
+                                <h5 data-bind="text: $data"></h5>
+                            </div>
+
+                            <div data-bind="foreach: InsuredItemLoadingsDisplay">
+                                <h5 data-bind="text: $data"></h5>
+                            </div>
+                        </td>
+
+                        <td data-bind="text: Comments"></td>
+                        <td style="text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency(ItemValue))"></td>
+                        <td style="text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency(MonthlyPremium))"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Total</td>
+                        <td style="width: 12%; text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.totalMonthlyPremium()))"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-condensed table-hover gradienttable">
+                <tbody>
+                    <tr>
+                        <td>Brokers Fee</td>
+                        <td style="width: 12%; text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.totalFees()))"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-condensed table-hover gradienttable">
+                <tbody>
+                    <tr>
+                        <td>Total commision component</td>
+                        <td style="width: 12%; text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.totalCommisionComponent()))"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-condensed table-hover gradienttable">
+                <tbody>
+                    <tr>
+                        <td>Total monthly premium</td>
+                        <td style="width: 12%; text-align: right; text-decoration: underline;" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.overalTotal()))"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+
+            <table class="table table-condensed table-hover gradienttable">
+                <thead>
+                    <tr>
+                        <th>Excesses</th>
+                        <th>Commision</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td style="width: 60%">
+                        <table class="table table-condensed table-hover gradienttable">
+                            <tr>
+                                <th>Excess Description</th>
+                                <th style="text-align: right">Excess Description Value</th>
+                            </tr>
+                            <tbody data-bind="foreach: $root.excesses">
+                                <tr>
+                                    <td data-bind="text: ExcessDescription"></td>
+                                    <td style="text-align: right" data-bind="text: ExcessDescriptionValue"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+
+                    <td style="width: 40%">
+                        <table class="table table-condensed table-hover gradienttable">
+                            <tr>
+                                <th>Commision Description</th>
+                                <th style="text-align: right">Commision Value</th>
+                            </tr>
+
+                            <tbody data-bind="foreach: $root.commisions">
+                                <tr>
+                                    <td data-bind="text: CommisionDescription"></td>
+                                    <td style="text-align: right" data-bind="text: $root.numberWithCommas($root.formatCurrency(CommisionValue))"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<!--  <table>
+                                <tbody data-bind="foreach: QuoteWarrantiesDisplay">
+                                <tr data-bind="text: $data"></tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <tbody data-bind="foreach: InsuredItemDiscountsDisplay">
+                                <tr data-bind="text: $data"></tr>
+                                </tbody>
+                            </table>
+
+                            <table>
+                                <tbody data-bind="foreach: InsuredItemLoadingsDisplay">
+                                <tr data-bind="text: $data"></tr>
+                                </tbody>
+                            </table>-->

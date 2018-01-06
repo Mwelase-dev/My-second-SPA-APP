@@ -1,0 +1,78 @@
+﻿<div>
+    <span>
+        <h3 style="margin-left: 15%; padding-right: 20%">Welcome to<span class="label label-default">Dashboard</span></h3>
+    </span>
+    <a type="submit" class="btn btn-default navbar-btn" style="margin-left: 65%;" data-bind="click: $root.createNewQuote" href="#">Create new Quote</a>
+     <form style="margin-left: 59%;" class="navbar-form " role="search">
+         <div class="form-group">
+             <!--<a type="submit" class="btn btn-default navbar-btn" style="margin-left: 74%;" data-bind="click: $root.createNewQuote" href="#">Create new Quote</a>-->
+             <label title="Search" for="txtSearch">Search quote</label>
+             <input id="txtSearch" class="form-control" placeholder="Search…" type="search" name="q" data-bind="value: query, valueUpdate: 'keyup'">
+
+         </div>
+            </form>
+    <div class="table-responsive">
+        <div class="table-responsive">
+
+           
+            <table id="myTable" class="table table-condensed table-hover gradienttable" style="width: 70%; margin-left: auto; margin-right: auto" data-sort-order="desc">
+                <thead class="headerText">
+                <tr>
+                    <th class="th-inner sortable" data-sortable="true">Client Name</th>
+                    <th data-sortable="true">Date</th>
+                    <th data-sortable="true">Quoted By</th>
+                    <th>Quote Action</th>
+                    <th>Status</th>
+                    <th>Status Action</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: computedPageLinks">
+                <tr>
+                    <td data-bind="text: ClientName"></td>
+                    <td data-bind="text: QuoteDate" ></td> 
+                    <td data-bind="text: UnderWriter"></td>
+                    <td data-bind="visible: QuoteStatus">
+                        <a data-bind="click: $root.getMoreQuoteDetails" href="#">Open</a> &#124;
+                        <a data-bind="click: $root.removeQuote" href="#" title="Remove"><i class="icon-upload">Remove</i> </a>&#124;
+                      <!--  <a data-bind="click: $root.email" href="#" title="Email"><i class="icon-upload">Email</i> </a>&#124;
+                        <a data-bind="click: $root.saveQuotePdf" href="#" title="Save"><i class="icon-upload">Save</i> </a>&#124;-->
+                        <a data-bind="click: $root.print" target="_blank" href="#" title="Print"><i class="icon-upload"></i>Print</a>
+                    </td>
+                    <td data-bind="text: QuoteStatus"></td>
+                    <td data-bind="visible: QuoteStatus">
+                        <button type="button" class="btn btn-default" aria-label="Left Align" title="Accept quote" data-bind="click: $root.setQuoteStatuToAccepted">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        </button>
+
+                        <button type="button" class="btn btn-default" aria-label="Left Align" title="Reject quote" data-bind="click: $root.setQuoteStatuToRejected">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+      <!--      <nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>-->
+        </div>
+    </div>
+    <div style="width: 50%;margin:auto"><button class="btn btn-default navbar-btn" data-bind="click: sortByName">Sort By Client Name</button>&nbsp;<button class="btn btn-default navbar-btn" data-bind="    click: sortByDate">Sort By Date</button>&nbsp;<button class="btn btn-default navbar-btn" data-bind="    click: sortByStatus">Sort By Quote Status</button>
+    </div>
+</div>
+

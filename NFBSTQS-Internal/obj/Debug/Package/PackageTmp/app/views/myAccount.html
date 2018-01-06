@@ -1,0 +1,67 @@
+﻿<div>
+    <span>
+        <h3 style="margin-left: 15%;">Here you can<span class="label label-default">Manage your account</span></h3>
+    </span>
+
+    <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+        <table class="table table-condensed">
+            <tbody data-bind="with: userModelToBeUpdated">
+                <tr>
+                    <td>FirstName</td>
+                    <td>
+                        <input class="form-control"  type="text" disabled data-bind='value: FirstName' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>LastName</td>
+                    <td>
+                        <input class="form-control"  type="text" disabled data-bind='value: LastName' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>UserName</td>
+                    <td>
+                        <input class="form-control"  type="text" disabled data-bind='value: UserName' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Old Password</td>
+                    <td>
+                        <input class="form-control"  type="password" id="oldpassword"  data-bind='value: $root.OldPassword, event: { change: $root.checkIfCurrentPasswordIsCorrect }' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>New Password</td>
+                    <td>
+                        <input class="form-control"  type="password" id="txtnewpass" data-bind='value: Password' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td>
+                        <input class="form-control"  type="password" id="txtconfirmnewpass" data-bind='value: Password, event: { change: $root.checkPasswordMatch }' />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="registrationFormAlert" id="divCheckPasswordMatch"></div>
+                    </td>
+                </tr>
+              
+            </tbody>
+
+        </table>
+        <div>
+            <button type="button" class="btn btn-success" data-bind="click: $root.save">Update</button>
+               <button type="button" class="btn btn-warning" data-bind="click: $root.close">Cancel</button>
+        </div>
+
+
+    </div>
+</div>

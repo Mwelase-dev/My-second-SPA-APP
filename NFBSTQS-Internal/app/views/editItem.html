@@ -1,0 +1,115 @@
+﻿<div>
+    <span class="label label-default">Edit item</span>
+
+    <div class="well">
+        <table class="table table-condensed" data-bind="with: insuredItemModelToBeUpdated">
+
+            <tr>
+                <td>Item Description</td>
+                <td>
+                    <input type="text" data-bind='value: ItemDescription'/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Value (R)</td>
+                <td>
+                    <input type="text" data-bind='value: ItemValue'/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Annual Premium</td>
+                <td>
+                    <input type="text" disabled data-bind='value: MonthlyPremium'/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Monthly Premium</td>
+                <td>
+                    <input type="text" disabled data-bind='value: AnnualPremium'/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Commision Content</td>
+                <td>
+                    <input type="text" disabled/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Loadings</td>
+                <td>
+                    <div>
+                        <form role="form">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Unoccupancy</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Construction</label>
+                            </div>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" value="">JHB</label>
+                            </div>
+                        </form>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Discounts</td>
+                <td>
+                    <div>
+                        <form role="form">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Gear Lock</label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="">Tracker</label>
+                            </div>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" value="">Alarm</label>
+                            </div>
+                        </form>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+
+                </td>
+                <td>
+
+
+                </td>
+            </tr>
+        </table>
+
+         <div class="row">
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-success" data-bind="click: $root.save" style="margin-left: 68%;">Save</button>
+                </div>
+                <div class="col-sm-3">
+                   <button type="button" class="btn btn-warning" data-bind="click: $root.close" style="margin-left: 68%;">Cancel</button>
+                </div>
+            </div>
+        <div>
+           
+
+                  
+        </div>
+    </div>
+
+</div>

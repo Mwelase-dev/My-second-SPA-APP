@@ -1,0 +1,39 @@
+﻿<div>
+    <span style="margin-left: 190px;" class="label label-default">Edit fee</span>
+
+    <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+        <table class="table table-condensed" data-bind="with: feeModelToBeUpdated">
+
+            <tr>
+                <td>Fee Description</td>
+                <td>
+                    <input type="text" data-bind='value: FeeDescription' />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Fee Value (R)</td>
+                <td>
+                    <input type="text" data-bind='value: FeeValue' />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Fee Rate (%)</td>
+                <td>
+                    <input type="text" data-bind='value: FeePercantage' />
+                </td>
+            </tr>
+            
+        </table>
+       <div class="row">
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-success" data-bind="click: $root.save" style="margin-left: 68%;">Save</button>
+                </div>
+                <div class="col-sm-3">
+                   <button type="button" class="btn btn-warning" data-bind="click: $root.close" style="margin-left: 68%;">Cancel</button>
+                </div>
+            </div>
+    </div>
+
+</div>

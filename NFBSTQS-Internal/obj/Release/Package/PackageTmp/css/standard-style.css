@@ -1,0 +1,10 @@
+#ads {
+  float: right;
+  font-size: 40px;
+  background-color: red;
+}
+
+#content {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

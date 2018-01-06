@@ -1,0 +1,133 @@
+﻿html,body {
+    /*padding-bottom: 70px;*/
+    height: 100%;
+}
+.projectImage
+{
+    background-position : right bottom;
+    width               : 152px; /*52*/
+    height              : 152px; /*77*/
+    background-color    : #C0C0C0;
+    text-align          : left;
+    vertical-align      : top;
+}
+.projData
+{
+    font-size       : 9pt;
+    font-weight     : normal;
+    text-decoration : none;
+    color           : #132F53;
+    text-align      : left;
+    vertical-align  : top;
+    height          : 165px;
+    padding-left    : 10px;
+    
+}
+.page-host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -100px;
+    padding-bottom: 100px;
+}
+.footer {
+    height: 100px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+#content {
+  padding-bottom: 70px;
+}
+#footer .navbar{
+  position: absolute;
+}
+.topline {
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAACAMADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD8gYavQ9aKK88+PqFiz6VesxzRRXm1TlqGhZrz0rUhHzUUVx1DEvQCtKEUUV59U4yzCKlgFFFYnQWKKKKACq84oooMyKYVFMPmooqaRzlGq95RRXdTAoyjmqN50ooroOwyZh81Vpvu0UV1UzQrT1Xm60UV3HYf/9k=') /*../../images/topline2.jpg*/;
+    background-repeat: repeat-x;
+}
+/*== Header text ================*/
+.headerText {
+    color: black;
+    background-color: silver;
+   
+}
+.contactsTable {
+    width: 100%;
+    color: black;
+    border: 10px solid rgb(252, 252, 254);
+    border-color: white;
+   
+}
+ 
+    .contactsTable table td {
+        border-style: ridge;
+         padding-right: 50px;
+    }
+
+     .contactsTable thead {
+         font-weight: bold;
+     }
+.icon-remove {
+  background-position: -312px 0;
+}
+.myclass {
+    width : 80%;
+    /*margin-left :auto;
+    margin-right : auto;
+    padding-left : 0%;
+    padding-right : 0%;*/
+    margin : 0%;
+    padding : 0%;
+}

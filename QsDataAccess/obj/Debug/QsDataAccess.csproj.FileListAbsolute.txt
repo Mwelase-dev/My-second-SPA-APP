@@ -1,0 +1,74 @@
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.dll.config
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.dll.config
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Debug\QsDataAccess.pdb
+C:\Projects\Short Term\QsDataAccess\bin\Debug\QsDataAccess.dll.config
+C:\Projects\Short Term\QsDataAccess\bin\Debug\QsDataAccess.dll
+C:\Projects\Short Term\QsDataAccess\bin\Debug\QsDataAccess.pdb
+C:\Projects\Short Term\QsDataAccess\bin\Debug\QsClasses.dll
+C:\Projects\Short Term\QsDataAccess\bin\Debug\QsClasses.pdb
+C:\Projects\Short Term\QsDataAccess\obj\Debug\QsDataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\Short Term\QsDataAccess\obj\Debug\QsDataAccess.dll
+C:\Projects\Short Term\QsDataAccess\obj\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\itextsharp.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\itextsharp.xml
+C:\Projects\Short Term\QsDataAccess\bin\Debug\itextsharp.dll
+C:\Projects\Short Term\QsDataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Short Term\QsDataAccess\bin\Debug\itextsharp.xml
+C:\Projects\Short Term\QsDataAccess\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\itextsharp.pdfa.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\itextsharp.xtra.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\CsvHelper.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\CsvHelper.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Debug\CsvHelper.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.dll.config
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.pdfa.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xtra.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.dll.config
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsDataAccess.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.pdfa.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xtra.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsClasses.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\QsClasses.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\CsvHelper.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\itextsharp.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsDataAccess\obj\Debug\QsDataAccess.pdb

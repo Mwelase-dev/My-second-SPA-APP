@@ -1,0 +1,51 @@
+﻿<form data-toggle="validator" role="form" id="newWarranty">
+    <div>
+        <span style="margin-left: 15%;" class="label label-default">Add new warranty</span>
+        <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+            <div>
+                <table class="table table-condensed">
+                    <tr>
+                        <td>Select Section</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <select data-bind="options: sections(), optionsText: 'SectionName', optionsValue: 'SectionId', value: SectionId " class=" form-group combobox form-control btn btn-default dropdown-toggle btn-select2"
+                                            name="inline"
+                                            id="cmbsections">
+                                    </select>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Short Description</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <textarea id="txtshortdescription" data-bind="value: WarrantyShortDescription"></textarea>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td>Warranty Description</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <textarea id="txtdescription" data-bind="value: WarrantyDescription"></textarea>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+                <div>
+                    <button type="button" class="btn btn-success" data-bind="click: save">Save</button>
+                    <button type="button" class="btn btn-warning" data-bind="click: close">Cancel</button>
+                </div>
+            </div>
+            <br />
+
+        </div>
+    </div>
+</form>

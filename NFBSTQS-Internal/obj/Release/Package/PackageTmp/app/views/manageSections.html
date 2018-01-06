@@ -1,0 +1,21 @@
+﻿<div>
+    <span> <h3 style="margin-left: 25%;">Here you can<span class="label label-default">Manage Sections</span></h3></span>
+    <a type="submit" class="btn btn-default navbar-btn" style="margin-left: 65%;" data-bind="attr: { href: '#/addnewSection' } ">Add new Section</a>
+    <table class="table table-condensed" style="width: 50%; margin-left: auto; margin-right: auto">
+        <thead class="headerText">
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: sections">
+        <tr>
+            <td data-bind="text: SectionName"></td>
+            <td data-bind="visible: SectionName != 'No Sections found'">
+                <a data-bind="click: $root.getSectionToModify" href="#" title="Modify"><i class="icon-upload">Modify</i> </a> &#124;
+                <a data-bind="click: $root.removeSection" href="#" title="Remove"><i class="icon-upload">Remove</i> </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

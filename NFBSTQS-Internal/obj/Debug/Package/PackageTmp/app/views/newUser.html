@@ -1,0 +1,58 @@
+﻿<form data-toggle="validator" role="form" id="newUser">
+<div>
+    <div>
+       <span style="margin-left: 190px;" class="label label-default">Create new users</span>
+      <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+
+            <table class="table table-condensed">
+                <tbody>
+                    <tr>
+                        <td>Staff Name</td>
+                        <td>
+                            <input type="text" data-bind='value: staffName' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Staff Last Name </td>
+                        <td>
+                            <input type="text" data-bind='value: staffLastName' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>
+                            <input type="text" data-bind='value: username' />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" data-bind='value: password' />
+                        </td>
+                    </tr>
+
+                     <tr>
+                            <td>Role Description</td>
+                         <td>
+                             <div class="row">
+                             <div class="col-md-4">
+                                 <select class="combobox form-control btn btn-default dropdown-toggle btn-select2" data-bind="options: loadAllRoles(), optionsText: 'RoleName', optionsValue: 'RoleId', value: roleId">
+                                 </select>
+                             </div>
+                                 </div>
+                         </td>
+                        </tr>
+                  
+                </tbody>
+            </table>
+
+
+          <div>
+              <button type="button" class="btn btn-success" data-bind="click: save, enable: staffName, enable: staffLastName, enable: username, enable: password">Save</button>
+                   <button type="button" class="btn btn-warning" data-bind="click: close">Cancel</button>
+
+          </div>
+      </div>
+    </div>
+</div>
+    </form>

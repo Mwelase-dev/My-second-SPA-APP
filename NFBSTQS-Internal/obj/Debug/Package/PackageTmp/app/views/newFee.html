@@ -1,0 +1,46 @@
+﻿<form data-toggle="validator" role="form" id="newFee">
+<div>
+    <span style="margin-left: 190px;" class="label label-default">Add new fee</span>
+    <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+        <div>
+            <table class="table table-condensed">
+                <tbody>
+                <!-- <tr>
+                    <td>Select Section</td>
+                    <td>
+                        <select data-bind="options: load(), optionsText: 'SectionName', optionsCaption: 'Select Section', optionsValue: 'SectionId', value: _section">
+                        </select>
+                    </td>
+                </tr>-->
+                <tr>
+                    <td>Fee Description</td>
+                    <td>
+                        <input type="text" data-bind='value: FeeDescription'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fee value (R)</td>
+                    <td>
+                        <input onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" type="text" data-bind='value: FeeValue'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fee rate (%)</td>
+                    <td>
+                        <input onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" type="text" data-bind='value: FeePercantage'/>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+            <div>
+                <button type="button" class="btn btn-success" data-bind="click: save">Save</button>
+                <button type="button" class="btn btn-warning" data-bind="click: close">Cancel</button>
+            </div>
+        </div>
+        <br/>
+
+    </div>
+</div>
+    </form>

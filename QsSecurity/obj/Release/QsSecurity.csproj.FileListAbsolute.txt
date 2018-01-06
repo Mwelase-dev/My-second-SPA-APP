@@ -1,0 +1,14 @@
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsSecurity.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Release\QsSecurity.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Release\QsSecurity.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Release\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\itextsharp.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\itextsharp.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Release\itextsharp.xmlworker.dll

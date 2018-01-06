@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Telerik HTML5 Report Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
+
+    <!--kendo.all.min.js can be used as well instead of kendo.web.min.js and kendo.mobile.min.js-->
+    <script src="http://cdn.kendostatic.com/2013.2.918/js/kendo.web.min.js"></script>
+    <!--kendo.mobile.min.js - optional, if gestures/touch support is required-->
+    <script src="http://cdn.kendostatic.com/2013.2.918/js/kendo.mobile.min.js"></script>
+
+    <link href="ReportViewer/styles/telerikReportViewer-8.1.14.816.css" rel="stylesheet" />
+    <script src="ReportViewer/js/telerikReportViewer-8.1.14.816.js"></script>
+
+    <style>
+        #reportViewer1 {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+
+            font-family: 'segoe ui', 'ms sans serif';
+
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="reportViewer1" class="k-widget">
+        loading...
+    </div>
+
+    <script type="text/javascript">
+        $("#reportViewer1")
+            .telerik_ReportViewer({
+                serviceUrl: "/api/reports/",
+                templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-8.1.14.618.htmll',
+                reportSource: {
+                    report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+                    parameters: {
+                        CultureID: "en"
+                    }
+                }
+            });
+    </script>
+
+</body>
+</html>

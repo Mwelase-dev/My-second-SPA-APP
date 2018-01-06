@@ -1,0 +1,26 @@
+﻿<div>
+    <div>
+        <div style="background-color: White; padding: 20px 20px 20px 20px; width: 100%;" class="modal-body" id="myform">
+            <span class="label label-default">Create new quote</span>
+            <div class="well">
+                <div>
+                    <table class="table table-bordered">
+                         <tr>
+                            <th>The insured details</th>
+                            <th>Add Ratings</th>
+                            <th>Add Loadings</th>
+                            <th>Add Discounts</th>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <div>
+                    <button class="btn btn-default" data-bind='click: addSection, disable: sections().length > 0 '>Add a section</button>
+                    <button class="btn btn-default" data-bind='click: save, enable: sections().length > 0'>Save</button>
+                    <button class="btn btn-warning" data-bind='click: close'>Cancel</button>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>

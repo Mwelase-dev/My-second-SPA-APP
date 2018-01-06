@@ -1,0 +1,213 @@
+﻿<form data-toggle="validator" role="form" id="newSection">
+    <div>
+        <span style="margin-left: 10%;" class="label label-default">Add new section</span>
+        <div style="width: 80%; margin-left: auto; margin-right: auto;" class="well">
+            <div>
+                
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Section name</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea type="text" class="form-control" data-bind='value: sectionName' placeholder="Enter section name" required></textarea>
+                        </div>
+                    </div>
+
+                
+                <br />
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Ratings</th>
+                        <th>Loadings</th>
+                        <th>Discounts</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <table class="table table-bordered">
+                                    <tbody data-bind="with: selectedRating()">
+                                        <tr>
+                                            <td>Description</td>
+
+                                            <td>
+                                                <input placeholder="Rating desc" type="text" class="form-control" data-bind='value: RatingDescription' /></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Threshold</td>
+
+                                            <td>
+                                                <input placeholder="Rating threshold" type="text" class="form-control" data-bind='value: Threshold' /></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Rate</td>
+
+                                            <td>
+                                                <input placeholder="Rating rate" type="text" class="form-control" data-bind='value: RatingPercentageValue' /></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Flat Rate</td>
+
+                                            <td>
+                                                <input placeholder="Flate rate" type="text" class="form-control" data-bind='value: RatingInRands' /></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <br />
+                                <a href='#' class="btn btn-primary" data-bind='click: $root.addRatings'>Save Rating</a>
+                                <a href='#' class="btn btn-warning" data-bind='click: $root.addNewRatings'>Cancel</a>
+                                <div>
+                                    <br />
+                                    <span style="margin-left: 1%;" class="label label-default">Your Ratings</span><br />
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th data-sortable="true">Description</th>
+                                            <th data-sortable="true">Threshold</th>
+                                            <th data-sortable="true">Rate</th>
+                                            <th data-sortable="true">Flat Rate</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        <tbody data-bind="foreach: allRatings">
+                                            <tr>
+                                                <td data-bind="text: RatingDescription"></td>
+                                                <td data-bind="text: Threshold"></td>
+                                                <td data-bind="text: RatingPercentageValue"></td>
+                                                <td data-bind="text: RatingInRands"></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Open Item Details" data-bind="click: $root.getSelectedRating">
+                                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Delete Item " data-bind="click: $root.removeSelectedRating">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                            <td class="col-md-4">
+                                <table class="table table-bordered">
+                                    <tbody data-bind="with: selectedLoading()">
+                                        <tr>
+                                            <td>Description</td>
+
+                                            <td>
+                                                <input placeholder="Loading desc" type="text" class="form-control" data-bind='value: LoadingDescription' /></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Rate</td>
+
+                                            <td>
+                                                <input placeholder="Loading rate" type="text" class="form-control" data-bind='value: LoadingRate' /></td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <br />
+                                <a href='#' class="btn btn-primary" data-bind='click: $root.addLoading'>Save Loading</a>
+                                <a href='#' class="btn btn-warning" data-bind='click: $root.addNewLoading'>Cancel</a>
+
+                                <div>
+                                    <br />
+                                    <span style="margin-left: 1%;" class="label label-default">Your Loadings</span><br />
+
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Loading Rate</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        <tbody data-bind="foreach: allLoadings">
+                                            <tr>
+                                                <td data-bind="text: LoadingDescription"></td>
+                                                <td data-bind="text: LoadingRate"></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Open Item Details" data-bind="click: $root.getSelectedLoading">
+                                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Delete Item " data-bind="click: $root.removeSelectedLoading">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                            <td class="col-md-4">
+                                <table class="table table-bordered">
+                                    <tbody data-bind="with: selectedDiscount()">
+                                        <tr>
+                                            <td>Description</td>
+
+                                            <td>
+                                                <input placeholder="Discount desc" type="text" class="form-control" data-bind='value: DiscountDescription' />
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Rate</td>
+
+                                            <td>
+                                                <input placeholder="Dicount rate" type="text" class="form-control" data-bind='value: DiscountRate' />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                <a href='#' class="btn btn-primary" data-bind='click: $root.addDiscount'>Save Discount</a>
+                                <a href='#' class="btn btn-warning" data-bind='click: $root.AddNewDiscount'>Cancel</a>
+
+                                <div>
+                                    <br />
+                                    <span style="margin-left: 1%;" class="label label-default">Your Discounts</span><br />
+
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <th>Description</th>
+                                            <th>Discount Rate</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                        <tbody data-bind="foreach: allDiscounts">
+                                            <tr>
+                                                <td data-bind="text: DiscountDescription"></td>
+                                                <td data-bind="text: DiscountRate"></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Open Item Details" data-bind="click: $root.getSelectedDiscount">
+                                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-default" aria-label="Left Align" title="Delete Item " data-bind="click: $root.removeSelectedDiscount">
+                                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <p>
+                <br />
+                <div>
+                    <button class="btn btn-success" data-bind='click: save, enable: sections().length > 0'>Save</button>
+                    <button class="btn btn-warning" data-bind='click: close'>Cancel</button>
+                </div>
+                <br />
+            </p>
+        </div>
+    </div>
+</form>

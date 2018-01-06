@@ -1,0 +1,113 @@
+﻿<div class="modal-content">
+    <div>
+        <div style="background-color: White; padding: 20px 20px 20px 20px; width: 100%;" class="modal-body" id="myform">
+            <span class="label label-default">Add new quote</span>
+            <table class="table table-condensed">
+                <tr>
+                    <td>Date:</td>
+                    <td>
+                        <input type="text" id="txtDate" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Quoted by</td>
+                    <td>
+                        <input type="text" id="txtQuotedBy" /></td>
+                </tr>
+
+                <tr>
+                    <td>The Insured</td>
+                    <td>
+                        <input type="text" id="txtTheInsured" /></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile number</td>
+                    <td>
+                        <input type="text" id="txtmobileNumber"/></td>
+                </tr>
+                <tr>
+                    <td>Total Monthly premium (calculated)</td>
+                    <td>
+                        <input type="text" id="txtmonthlyPremium" disabled/></td>
+                </tr>
+                     <tr>
+                    <td>Total Annual premium (calculated)</td>
+                    <td>
+                        <input type="text" id="txtAnnualPremiumr" disabled/></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <form data-bind='submit: save'>
+                            <table data-bind='visible: insuredItems().length > 0' class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Item</th>
+                                        <th>Value</th>
+                                        <th>Discounts</th>
+                                        <th>Loadings</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind='foreach: insuredItems'>
+                                <tr>
+                                    <td>
+                                        <select class=" form-group combobox form-control btn btn-default dropdown-toggle btn-select2" name="inline">
+                                            <option value="" selected="selected">Select a section</option>
+                                            <option>Building</option>
+                                            <option>Contents</option>
+                                            <option>Vehicle</option>
+                                            <option>All Risks</option>
+                                            <option>Personal Legal Liability</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input class='form-control' id="txtItemDescription"/>
+                                    </td>
+                                    <td>
+                                        <input class='form-control' id="txtItemValue"/>
+                                    </td>
+                                    <td>
+                                        <select class="form-control"multiple="multiple" data-bind="options: $root.allDiscounts"></select>
+                                    </td>
+                                    <td>
+                                        <span style="float: right"><select class="form-control"multiple="multiple" data-bind="options: $root.allLoadings"></select></span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger" data-bind='click: $root.removeInsuredItem'>
+                                            <span class="fa fa-trash-o"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Monthly premium</td>
+                                    <td>
+                                        <input class="form-control" disabled/>
+                                    </td>
+                                </tr>
+                                     <tr>
+                                    <td>Annual premium</td>
+                                    <td>
+                                        <input class="form-control" disabled/>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <button class="btn btn-default" data-bind='click: addInsuredItem'>Add Item</button>
+                            <button class="btn btn-success" data-bind='enable: insuredItems().length > 0' type="submit">Submit</button>
+
+                            <!--<button class="btn btn-success" data-bind='enable: insuredItems().length > 0' type="submit">Submit</button>-->
+                            <button class="btn btn-warning" data-bind='click: close'>Cancel</button>
+                        </form>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="background-color: White; padding: 20px 20px 20px 20px; width: 100%;">
+    </div>
+</div>

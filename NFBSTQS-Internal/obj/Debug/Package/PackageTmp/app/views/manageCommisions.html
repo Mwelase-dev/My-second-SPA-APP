@@ -1,0 +1,26 @@
+﻿<div>
+    <span> <h3 style="margin-left: 15%;">Here you can<span class="label label-default">Manage Commisions</span></h3></span>
+    <a type="submit" class="btn btn-default navbar-btn" style="margin-left: 75%;" data-bind="attr: { href: '#/newCommision' } ">Add New Commision</a>
+    <table class="table table-condensed" style="width: 70%; margin-left: auto; margin-right: auto">
+        <thead class="headerText">
+        <tr>
+             <th>Commision Description</th>
+            <th>Commision Value</th>
+             
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: commisions">
+        <tr>
+            <td data-bind="text: CommisionDescription"></td>
+            <td data-bind="text: $root.numberWithCommas($root.formatCurrency(CommisionValue))"></td>
+             
+            <td data-bind="visible: CommisionDescription != 'No Commisions were found'">
+                <a data-bind="click: $root.getCommisionToModify" href="#" title="Modify"><i class="icon-upload">Modify</i> </a> &#124;
+                <a data-bind="click: $root.removeCommisions" href="#" title="Remove"><i class="icon-upload">Remove</i> </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--</div>-->
+</div>

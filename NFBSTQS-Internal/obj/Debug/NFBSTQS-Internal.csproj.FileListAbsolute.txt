@@ -1,0 +1,101 @@
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll.config
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Net.Http.Formatting.xml
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.xml
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll.config
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\NFBSTQS-Internal.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.pdb
+C:\Projects\Short Term\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll.config
+C:\Projects\Short Term\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\NFBSTQS-Internal.pdb
+C:\Projects\Short Term\NFBSTQS-Internal\bin\Newtonsoft.Json.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsClasses.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsDataAccess.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\System.Net.Http.Formatting.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\System.Web.Http.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\System.Web.Http.WebHost.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsClasses.pdb
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsDataAccess.pdb
+C:\Projects\Short Term\NFBSTQS-Internal\bin\Newtonsoft.Json.xml
+C:\Projects\Short Term\NFBSTQS-Internal\bin\System.Web.Http.WebHost.xml
+C:\Projects\Short Term\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.csprojResolveAssemblyReference.cache
+C:\Projects\Short Term\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.dll
+C:\Projects\Short Term\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsSecurity.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\itextsharp.dll
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\itextsharp.xml
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsSecurity.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\itextsharp.dll
+C:\Projects\Short Term\NFBSTQS-Internal\bin\QsSecurity.pdb
+C:\Projects\Short Term\NFBSTQS-Internal\bin\itextsharp.xml
+D:\Projects\NFB Short Term\NFBST Quote System\NFBSTQS-Internal\bin\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll.config
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsClasses.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsDataAccess.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsSecurity.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsClasses.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsDataAccess.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsSecurity.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll.config
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\NFBSTQS-Internal.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\Newtonsoft.Json.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsClasses.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsDataAccess.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsSecurity.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Net.Http.Formatting.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.WebHost.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.xmlworker.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsClasses.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsDataAccess.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\QsSecurity.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\Newtonsoft.Json.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\System.Web.Http.WebHost.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\bin\itextsharp.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.csprojResolveAssemblyReference.cache
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\NFBSTQS-Internal\obj\Debug\NFBSTQS-Internal.pdb

@@ -1,0 +1,192 @@
+﻿<form data-toggle="validator" role="form" id="newQuote">
+    <div class="form-group">
+        <span style="margin-left: 15%;" class="label label-default">Create new quote</span>
+        <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>The Insured</h4>
+                        <!--<label for="email">The Insured</label>-->
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" data-bind='value: clientName' placeholder="Enter clients name" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Mobile number</h4>
+                        <!--<label >Mobile number</label>-->
+                    </div>
+                    <div class="col-md-9">
+
+                        <input id="email" class="form-control" placeholder="Enter phone number" type="text" data-bind='value: contactNumber' />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Total Monthly premium</h4>
+                        <!--<label >Total Monthly premium</label>-->
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="calculated" data-bind="value: totalMonthlyPremium" disabled />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Total Annual premium</h4>
+                        <!--<label >Total Annual premium</label>-->
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" placeholder="calculated" data-bind="value: totalAnnualPremium" disabled />
+                    </div>
+                </div>
+
+                <table class="table table-condensed">
+                    <tr>
+                        <td>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Section</th>
+                                    <th>Insured Items</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-xs-3">
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <a class="btn btn-danger" href='#' data-bind='click: removequote'>
+                                                        <span class="fa fa-trash-o"></span>
+                                                    </a>
+                                                </span>
+                                                <select data-bind="options: getallSections(), enable: clientName, enable: contactNumber,
+    optionsText: 'SectionName',
+    optionsValue: 'SectionId',
+    optionsCaption: 'Select section',
+    value: $root.selectedItem().SectionId,
+    event: { change: $root.loadAllChildrenOfSection }"
+                                                    class=" form-group combobox form-control btn btn-default dropdown-toggle btn-select2"
+                                                    name="inline"
+                                                    id="cmbsections">
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <table class="table">
+                                                <tr>
+                                                    <th>Description</th>
+                                                    <th>Value</th>
+                                                    <th>Loadings</th>
+                                                    <th>Discounts</th>
+                                                </tr>
+                                                <tbody data-bind="with: $root.selectedItem()">
+                                                    <tr>
+                                                        <td class="col-xs-3">
+                                                            <textarea id="txtItemDescription" type="text" class="form-control" placeholder="Item description" data-bind='value: $root.ItemDescription'></textarea>
+                                                        </td>
+                                                        <td class="col-xs-3">
+                                                           
+                                                            <div class="form-group">
+
+                                                                <div>
+                                                                    <input id="txtItemValue" type="number" class="form-control" name="number" placeholder="Item Value"
+                                                                        data-fv-integer="true"
+                                                                        data-fv-integer-message="The value is not an integer"
+                                                                        data-bind="value: $root.ItemValue, event: { change: $root.checkRating }" />
+                                                                    <div class="help-block with-errors"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="col-xs-3">
+                                                            <select id="ddlLoadings" class="form-control" multiple="multiple" data-bind="options: $root.allLoadings(), optionsText: 'LoadingDescription', optionsValue: 'LoadingRate', selectedOptions: $root.valueOfSelectedLoading, event: { change: $root.testClick2 }" name="D1">
+                                                            </select>
+
+
+
+                                                        </td>
+                                                        <td class="col-xs-3">
+                                                            <select id="ddlDiscounts" class="form-control" multiple="multiple" data-bind="options: $root.allDiscounts(), optionsText: 'DiscountDescription', optionsValue: 'DiscountRate', selectedOptions: $root.valueOfSelectedDiscount " name="D2">
+                                                            </select>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Monthly Premium</td>
+                                                        <td>
+                                                            <input id="txtmonthlyPremium" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.monthlyPremiumCalcu" disabled />
+                                                        </td>
+                                                        <td>
+                                                            <input id="txtgetCalcOfSelectedLoadingTimesItemValue" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.getCalcOfSelectedLoadingTimesItemValue" disabled />
+                                                        </td>
+                                                        <td>
+                                                            <input id="txtgetCalcOfSelectedDiscountTimesItemValue" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.getCalcOfSelectedDiscountTimesItemValue" disabled />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annual Premium</td>
+                                                        <td>
+                                                            <input id="txtAnnual" type="text" class="form-control" placeholder="calculated" data-bind="value: $root.annualPremiumCalcu" disabled />
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br />
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary" data-bind='click: $root.addItem, enable: $root.annualPremiumCalcu() > 0'>Add Item</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <span class="label label-default">Your Items</span><br />
+            <div id="" style="overflow-y: scroll; height: 130px;">
+                <table class="table table-condensed" id="results">
+                    <thead>
+                        <tr>
+                            <th>Item Description</th>
+                            <th>Item Value</th>
+                            <th>Monthy premium</th>
+                            <th>Annual premium</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody data-bind="foreach: $root.allItems()">
+                        <tr>
+                            <td data-bind="text: ItemDescription"></td>
+
+                            <td data-bind="text: ItemValue"></td>
+
+                            <td data-bind="text: MonthlyPremium"></td>
+
+                            <td data-bind="text: AnnualPremium"></td>
+
+                            <td>
+                                <button type="button" class="btn btn-default" aria-label="Left Align" data-bind="click: $root.getSelectedItem">
+                                    <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                                </button>
+                              
+                                <a href='#' class="btn btn-danger" data-bind="click: $root.removeSelected">
+                                    <span class="fa fa-trash-o"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success" data-bind='click: save, enable: allItems().length > 0'>Save</button>
+                <button class="btn btn-warning" data-bind='click: close'>Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>

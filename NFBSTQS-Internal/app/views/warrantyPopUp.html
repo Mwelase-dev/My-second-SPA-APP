@@ -1,0 +1,23 @@
+﻿<form data-toggle="validator" role="form" id="warrantyPopUp">
+    <div>
+        <span style="margin-left: 10%;" class="label label-default">Add new section</span>
+        <div style="width: 80%; margin-left: auto; margin-right: auto;" class="well">
+            <div>
+               
+                    <div class="span4">
+
+                        <select id="ddlLoadings" class="form-control" multiple="multiple" data-bind="options: $root.waranties(), optionsText: 'WarrantyDescription', optionsValue: 'WarrantyDescription', selectedOptions: $root.selectedWarranties" name="D1">
+                        </select>
+                    </div>
+                     <br/>
+                    <div class="span4">
+
+                        <button type="submit" class="btn btn-success" data-bind="click : $root.save">Done</button>
+                         <button type="button" class="btn btn-warning" data-bind="click: $root.close">Cancel</button>
+                    </div>
+                         
+               
+            </div>
+        </div>
+    </div>
+</form>

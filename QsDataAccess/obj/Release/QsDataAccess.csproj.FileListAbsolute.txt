@@ -1,0 +1,13 @@
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\QsDataAccess.dll.config
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Release\QsDataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Release\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\obj\Release\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\itextsharp.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\itextsharp.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsDataAccess\bin\Release\itextsharp.xmlworker.dll

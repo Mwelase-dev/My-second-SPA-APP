@@ -1,0 +1,100 @@
+﻿<div class="modal-content">
+    <div>
+        <div style="background-color: White; padding: 20px 20px 20px 20px; width: 100%;" class="modal-body" id="myform">
+            <span class="label label-default">Loading</span>
+            <table class="table table-condensed">
+                <tr>
+                    <td>Select Category</td>
+                    <td>
+                        <select id="cmbLoadingType" data-bind="options: load(), optionsText: 'loading', optionsValue: 'loading', value: 'loading'">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loading Description</td>
+                    <td>
+                        <input id="txtdescription" type="text" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Loading percentage</td>
+                    <td>
+                        <input id="txtdescription" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-default navbar-btn" data-bind="click: close" style="margin-left: 68%;">Save</button>
+
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-default navbar-btn" data-bind="click: close" style="margin-left: 68%;">Cancel</button>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+
+
+</div>
+
+<!--<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+                     
+                        <tr>
+                            <td>Select Loading Type</td>
+                            <td>
+                                <select id="cmbLoadingType" data-bind="options: load(), optionsText: 'loading', optionsValue: 'loading', value: 'loading'">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rating Description</td>
+                            <td>
+                                <input id="txtdescription" type="text" value="1st braket up to" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Value up to </td>
+                            <td>
+                                <input id="txtValue" type="text" value="500000" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rate</td>
+                            <td>
+                                <input id="txtRatePercentage" type="text" value="0.1890%" />
+                                or
+                                <input id="txtRateRands" type="text" value="R300.00" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                
+                                    <input type="submit" value="Save" data-bind="click: close" style="width: 50px;" />
+                                    <input type="submit" value="Close" data-bind="click: close" style="width: 50px;" />
+                               
+                            </td>
+                        </tr>
+                   
+                </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+<!-- /.modal-dialog -->
+<!-- /.modal -->

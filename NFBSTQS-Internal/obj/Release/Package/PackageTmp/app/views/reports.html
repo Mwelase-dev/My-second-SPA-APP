@@ -1,0 +1,184 @@
+﻿<!--<form data-toggle="validator" role="form" id="quoteReport">-->
+<div class="form-group">
+    <div class="page">
+        <div class="row" id="logos">
+
+            <div class="col-xs-4">
+                <img src="https://quotes.nfbst.co.za/images/Hollard.png" style="padding-left: 0%; padding-top: 8%;" />
+
+            </div>
+
+            <div class="col-xs-4">
+                <img src="https://quotes.nfbst.co.za/images/NFB_300_147_90.jpg" />
+
+            </div>
+            <div class="col-xs-4">
+                <img src="https://quotes.nfbst.co.za/images/Fia.png" style="padding-top: 3%; padding-left: 57%; padding-top: 10%;" />
+
+            </div>
+
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-xs-4">
+            </div>
+            <div class="col-xs-4">
+                <h3><span style="margin-left: 13%;" class="label label-default">Insurance Quote</span></h3>
+            </div>
+            <div class="col-xs-4">
+            </div>
+        </div>
+        <br />
+        <div data-bind="with: $root.quoteToPrint">
+            <div class="row">
+                <div class="col-xs-3">
+                    <h4>The Insured </h4>
+                </div>
+                <div class="col-xs-9">
+                    <h4 data-bind='text: ClientName'></h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <h4>Mobile number</h4>
+                </div>
+                <div class="col-xs-9">
+                    <h4 data-bind='text: ContactNumber'></h4>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-12">
+                <table class="table table-condensed table-hover gradienttable">
+                    <tr>
+                        <th>Section</th>
+                        <th>Description</th>
+                        <th>Discounts</th>
+                        <th>Loadings</th>
+                        <th>Warranties</th>
+                        <th>Comments</th>
+                        <th>Sums Insured</th>
+                        <th>Monthly Premium</th>
+                    </tr>
+                    <tbody data-bind="foreach: $root.items()">
+                        <tr>
+                            <td data-bind="text: SectionDisplay"></td>
+                            <td data-bind="text: ItemDescription"></td>
+                            <td data-bind="text: InsuredItemDiscountsDisplay"></td>
+                            <td data-bind="text: InsuredItemLoadingsDisplay"></td>
+                            <td data-bind="text: QuoteWarrantiesDisplay"></td>
+                            <td data-bind="text: Comments"></td>
+                            <td data-bind="text: $root.numberWithCommas($root.formatCurrency(ItemValue))"></td>
+                            <td data-bind="text: $root.numberWithCommas($root.formatCurrency(MonthlyPremium))"></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+                <!--<ul data-bind="foreach: sectionLabels">
+            <li>
+                <h2 data-bind="text: $data"></h2>
+                <ul data-bind="foreach: $root.items()">
+                    <li data-bind="text: ItemDescription"></li>
+                    <li data-bind="text: InsuredItemDiscountsDisplay"></li>
+                    <li data-bind="text: InsuredItemLoadingsDisplay"></li>
+                </ul>
+                <hr/>
+            </li>
+        </ul>-->
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-md-12">
+                <table class="table table-condensed table-hover gradienttable">
+                    <tbody>
+                        <tr>
+                            <td>Total</td>
+                            <td style="padding-left: 89%;" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.totalMonthlyPremium()))"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-md-12">
+                <table class="table table-condensed table-hover gradienttable">
+                    <tbody>
+                        <tr>
+                            <td>Brokers Fee</td>
+                            <td style="padding-left: 86%;" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.totalFees()))"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-md-12">
+                <table class="table table-condensed table-hover gradienttable">
+                    <tbody>
+                        <tr>
+                            <td>Total monthly premium</td>
+                            <td style="padding-left: 79%;" data-bind="text: $root.numberWithCommas($root.formatCurrency($root.overalTotal()))"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br />
+        <table class="table table-condensed table-hover gradienttable" style="width: 100%">
+            <thead>
+                <tr>
+                    <th>Excesses</th>
+                    <th>Commision</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <table class="table table-condensed table-hover gradienttable">
+                        <tr>
+                            <th>Excess Description</th>
+                            <th>Excess Description Value</th>
+                        </tr>
+                        <tbody data-bind="foreach: $root.excesses">
+                            <tr>
+                                <td data-bind="text: ExcessDescription"></td>
+                                <td data-bind="text: ExcessDescriptionValue"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="table table-condensed table-hover gradienttable">
+                        <tr>
+                            <th>Commision Description</th>
+                            <th>Commision Value</th>
+                        </tr>
+
+                        <tbody data-bind="foreach: $root.commisions">
+                            <tr>
+                                <td data-bind="text: CommisionDescription"></td>
+                                <td data-bind="text: $root.numberWithCommas($root.formatCurrency(CommisionValue))"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--</form>-->

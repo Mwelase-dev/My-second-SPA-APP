@@ -1,0 +1,31 @@
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsClasses\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsClasses\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsClasses\obj\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsClasses\obj\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST QS Uptodated\NFBST Quote System\QsClasses\obj\Debug\QsClasses.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Debug\QsClasses.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\obj\Debug\QsClasses.pdb
+C:\Projects\Short Term\QsClasses\bin\Debug\QsClasses.dll
+C:\Projects\Short Term\QsClasses\bin\Debug\QsClasses.pdb
+C:\Projects\Short Term\QsClasses\obj\Debug\QsClasses.csprojResolveAssemblyReference.cache
+C:\Projects\Short Term\QsClasses\obj\Debug\QsClasses.dll
+C:\Projects\Short Term\QsClasses\obj\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsClasses\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\QsClasses.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\QsClasses.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.csprojResolveAssemblyReference.cache
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsClasses\obj\Debug\QsClasses.pdb

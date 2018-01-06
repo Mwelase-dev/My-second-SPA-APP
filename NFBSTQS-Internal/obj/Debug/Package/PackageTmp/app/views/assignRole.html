@@ -1,0 +1,27 @@
+﻿<div>
+    <div>
+        <span style="margin-left: 190px;" class="label label-default">Assign Role</span>
+        <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Role Description</h4>
+
+                    </div>
+                    <div class="col-md-4">
+                        <select class="combobox form-control btn btn-default dropdown-toggle btn-select2" data-bind="options: loadAllRoles(), optionsText: 'RoleName', optionsValue: 'RoleId', value: roleId">
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-success" data-bind="click: save">Save</button>
+                <button type="button" class="btn btn-warning" data-bind="click: close">Cancel</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+

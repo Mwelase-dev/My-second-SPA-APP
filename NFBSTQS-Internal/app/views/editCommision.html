@@ -1,0 +1,39 @@
+﻿<div>
+    <span style="margin-left: 15%;" class="label label-default">Edit commision</span>
+    <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+
+        <table class="table table-condensed">
+            <thead>
+            </thead>
+
+            <tbody data-bind="with: commisionModelToBeUpdated">
+                <tr>
+                    <td>Commision Description</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <textarea class="form-control" class="form-control" type="text" data-bind='value: CommisionDescription'></textarea>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                  <tr>
+                    <td>Commision Value</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input class="form-control" type="text" data-bind='value: CommisionValue'/>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+        <div>
+            <button type="button" class="btn btn-success" data-bind="click: $root.save">Save</button>
+            <button type="button" class="btn btn-warning" data-bind="click: $root.close">Cancel</button>
+        </div>
+    </div>
+</div>

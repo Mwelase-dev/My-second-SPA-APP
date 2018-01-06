@@ -1,0 +1,221 @@
+﻿<form data-toggle="validator" role="form" id="editQuote">
+    <div class="form-group">
+        <span style="margin-left: 15%;" class="label label-default">Quote</span>
+        <div style="width: 70%; margin-left: auto; margin-right: auto;" class="well">
+            <div>
+                <div data-bind="with: $root.quoteToUpdate">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>The Insured</h4>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input id="txtname" type="text" class="form-control" data-bind='value: ClientName' placeholder="Enter clients name" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Mobile number</h4>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <input id="txtcontactnumber" class="form-control" placeholder="Enter phone number" type="text" data-bind='value: ContactNumber'/>
+                        </div>
+                    </div>
+
+                     <!-- <div class="row">
+                        <div class="col-md-4">
+                            <h4>Email</h4>
+
+                        </div>
+                        <div class="col-md-8">
+
+                            <input id="txtemail" class="form-control" placeholder="Enter email address" type="email" data-bind='value: Email' />
+                        </div>
+                    </div>-->
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Total Monthly premium</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <input id="txtTotalMonthlyPremium" type="text" class="form-control" placeholder="calculated" data-bind="value: $root.numberWithCommas($root.totalMonthlyPremium())" disabled />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Total Annual premium</h4>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input id="txtTotalAnnualPremium" type="text" class="form-control" placeholder="calculated" data-bind="value: $root.numberWithCommas($root.totalAnnualPremium())" disabled/>
+                        </div>
+                    </div>
+
+                       <div class="row">
+                        <div class="col-md-4">
+                            <h4>The Warranties</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <select id="ddlWarranties" class="form-control" multiple="multiple" data-bind="options: $root.allWarranties(), optionsText: 'WarrantyDescription', optionsValue: 'WarrantyId', selectedOptions: $root.selectedWarranties" name="D1">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-condensed">
+                    <tr>
+                        <td>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Insured Items</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-xs-3">
+                                            <div class="input-group-btn">
+
+                                                <select id="cmbsections" data-bind="options: $root.allSections(),
+    optionsText: 'SectionName',
+    optionsValue: 'SectionId',
+ 
+    value: $root.selectedItem().SectionId,
+    event: { change: $root.loadAllChildrenOfSection }"
+                                                    class=" form-group combobox form-control btn btn-default dropdown-toggle btn-select2"
+                                                    name="inline">
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <table class="table">
+                                                <tr>
+                                                    <th>Description</th>
+                                                    <th>Value</th>
+                                                    <th>Loadings</th>
+                                                    <th>Discounts</th>
+                                                </tr>
+                                                <tbody data-bind="with: $root.selectedItem()">
+                                                    <tr>
+                                                        <td class="col-xs-3">
+                                                            <textarea id="txtItemDescription" type="text" class="form-control" maxlength="200"
+                                                                placeholder="Item description" data-bind='value: $root.selectedItem().ItemDescription'></textarea>
+                                                        </td>
+                                                        <td class="col-xs-3">
+
+                                                            <div class="form-group">
+
+                                                                <div>
+                                                                    <input id="txtItemValue" type="number" onkeyup="this.value=this.value.replace(/[^0-9.]/g,'')" step="1" min="0" class="form-control" name="number" placeholder="Item Value"
+                                                                        data-fv-integer="true"
+                                                                        data-fv-integer-message="The value is not an integer"
+                                                                        data-bind="value: $root.selectedItem().ItemValue, event: { change: $root.checkRating }" />
+                                                                    <div class="help-block with-errors"></div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="col-xs-3">
+                                                            <!--<select id="ddlLoadings" class="form-control" multiple="multiple" data-bind="options: $root.allLoadings(), optionsText: 'LoadingDescription', optionsValue: 'LoadingRate', selectedOptions: $root.valueOfSelectedLoading " name="D1">
+                                                            </select>-->
+                                                            <select id="ddlLoadings" class="form-control" multiple="multiple" data-bind="options: $root.allLoadings(), optionsText: 'LoadingDescription', optionsValue: 'LoadingId', selectedOptions: $root.selectedLoadings" name="D1">
+                                                            </select>
+                                                        </td>
+                                                        <td class="col-xs-3">
+                                                            <!-- <select id="ddlDiscounts" class="form-control" multiple="multiple" data-bind="options: $root.allDiscounts(), optionsText: 'DiscountDescription', optionsValue: 'DiscountRate', selectedOptions: $root.valueOfSelectedDiscount " name="D2">
+                                                            </select>-->
+                                                            <select id="ddlDiscounts" class="form-control" multiple="multiple" data-bind="options: $root.allDiscounts(), optionsText: 'DiscountDescription', optionsValue: 'DiscountId', selectedOptions: $root.selectedDiscounts" name="D2">
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Monthly Premium</td>
+                                                        <td>
+                                                            <input id="txtmonthlyPremium" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.monthlyPremiumCalcu" disabled />
+                                                        </td>
+                                                        <td>
+                                                            <input id="txtgetCalcOfSelectedLoadingTimesItemValue" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.getCalcOfSelectedLoadingTimesItemValue" disabled />
+                                                        </td>
+                                                        <td>
+                                                            <input id="txtgetCalcOfSelectedDiscountTimesItemValue" class="form-control" placeholder="calculated" type="text" data-bind="value: $root.getCalcOfSelectedDiscountTimesItemValue" disabled />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Annual Premium</td>
+                                                        <td>
+                                                            <input id="txtAnnual" type="text" class="form-control" placeholder="calculated" data-bind="value: $root.annualPremiumCalcu" disabled />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Comments</td>
+                                                        <td>
+                                                            <textarea id="txtComments" type="text" class="form-control" placeholder="Comments" data-bind="value: $root.selectedItem().Comments"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br />
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary" data-bind='click: $root.updateItem, enable: $root.annualPremiumCalcu() > 0'>Add Item</button>
+                                                <button type="submit" class="btn btn-warning" data-bind='click: $root.cancel'>Cancel</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <span style="margin-left: 1%;" class="label label-default">Your Items</span><br />
+            <table class="table table-condensed" style="margin: 0">
+                <thead>
+                    <tr>
+                        <th style="width: 19%">Item Description</th>
+                              <th style="width: 19%; text-align: right">Item Value</th>
+                        <th style="width: 19%; text-align: right">Monthy premium</th>
+                        <th style="width: 19%; text-align: right">Annual premium</th>
+                        <th style="width: 19%; text-align: right">Actions</th>
+                    </tr>
+                </thead>
+
+            </table>
+            <div id="" style="overflow-y: scroll; height: 130px;">
+
+                <table class="table table-condensed" id="results" data-bind="foreach: $root.items()">
+
+                    <tr>
+                        <td data-bind="text: ItemDescription" style="width: 19%" ></td>
+
+                        <td data-bind="text: ItemValue" style="width: 19%; text-align: right"></td>
+
+                        <td data-bind="text: $root.numberWithCommas($root.formatCurrency(MonthlyPremium))" style="width: 19%; text-align: right"></td>
+
+                        <td data-bind="text: $root.numberWithCommas($root.formatCurrency(AnnualPremium))" style="width: 19%; text-align: right"></td>
+
+                        <td style="width: 19%; text-align: right">
+                            <button type="button" class="btn btn-default" aria-label="Left Align" title="Open Item Details" data-bind="click: $root.getSelectedItem">
+                                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                            </button>
+                            <a href='#' class="btn btn-danger" data-bind="click: $root.removeSelected" title="Delete Item">
+                                <span class="fa fa-trash-o"></span>
+                            </a>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        <div>
+            <h4 data-bind="visible: $root.busyWorking() > 0">Working. Please wait......</h4>
+            <button type="submit" class="btn btn-success" data-bind='click: $root.save,enable: $root.busyWorking() < 1'>Save</button>
+            <button class="btn btn-warning" data-bind='click: $root.close, enable: $root.busyWorking() < 1'>Cancel</button>
+            <!--<button type="submit" class="btn btn-primary" data-bind='click: $root.addNewItemToExistingQuote'>Add Item</button>-->
+        </div>
+        </div>
+    </div>
+</form>

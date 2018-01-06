@@ -1,0 +1,25 @@
+﻿<div>
+    <span> <h3 style="margin-left: 15%;">Here you can<span class="label label-default">Manage Warranties</span></h3></span>
+    <a type="submit" class="btn btn-default navbar-btn" style="margin-left: 75%;" data-bind="attr: { href: '#/newWarranty' } ">Add New Warranty</a>
+    <table class="table table-condensed" style="width: 70%; margin-left: auto; margin-right: auto">
+        <thead class="headerText">
+        <tr>
+            <!--<th>Section name</th>-->
+            <th>Name</th>
+             
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: warranties">
+        <tr>
+            <td data-bind="text: WarrantyDescription"></td>
+             
+            <td data-bind="visible: WarrantyDescription != 'No Warranties were found'">
+                <a data-bind="click: $root.getWarrantyToModify" href="#" title="Modify"><i class="icon-upload">Modify</i> </a> &#124;
+                <a data-bind="click: $root.removeWarranty" href="#" title="Remove"><i class="icon-upload">Remove</i> </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--</div>-->
+</div>

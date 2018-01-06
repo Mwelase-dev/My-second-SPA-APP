@@ -1,0 +1,29 @@
+﻿<div>
+    <span> <h3 style="margin-left: 15%;">Here you can<span class="label label-default">Manage Ratings</span></h3></span>
+    <a type="submit" class="btn btn-default navbar-btn" style="margin-left: 75%;" data-bind="attr: { href: '#/newRating' } ">Add new Rating</a>
+    <table class="table table-condensed" style="width: 70%; margin-left: auto; margin-right: auto">
+        <thead class="headerText">
+        <tr>
+            <th>Name</th>
+            <th>Rating Percentage Value</th>
+            <th>Rating in Rands</th>
+            <th>Threshold</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody data-bind="foreach: ratings">
+        <tr>
+            <td data-bind="text: RatingDescription"></td>
+           <td data-bind="text: RatingPercentageValue"></td>
+            <td data-bind="text: $root.numberWithCommas($root.formatCurrency(RatingInRands))"></td>
+            <td data-bind="text: $root.numberWithCommas($root.formatCurrency(Threshold))"></td>
+
+            <td data-bind="visible: RatingPercentageValue > 0">
+                <a data-bind="click: $root.getRatingDetailsToModify" href="#" title="Modify"><i class="icon-upload">Modify</i> </a> &#124;
+                <a data-bind="click: $root.removeRating" href="#" title="Remove"><i class="icon-upload">Remove</i> </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--</div>-->
+</div>

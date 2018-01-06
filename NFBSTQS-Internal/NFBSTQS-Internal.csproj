@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B65ACD9D-259E-44B4-B580-85704AE7C878}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFBSTQS_Internal</RootNamespace>
+    <AssemblyName>NFBSTQS-Internal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\main.js" />
+    <Content Include="app\playground.html" />
+    <Content Include="app\services\config.js" />
+    <Content Include="app\services\datacontext.js" />
+    <Content Include="app\services\logger.js" />
+    <Content Include="app\shell.html" />
+    <Content Include="app\shell.js" />
+    <Content Include="app\viewmodels\editCommision.js" />
+    <Content Include="app\viewmodels\editFee.js" />
+    <Content Include="app\viewmodels\editItem.js" />
+    <Content Include="app\viewmodels\editExcess.js" />
+    <Content Include="app\viewmodels\getReports.js" />
+    <Content Include="app\viewmodels\manageCommisions.js" />
+    <Content Include="app\viewmodels\manageUser.js" />
+    <Content Include="app\viewmodels\editWarranty.js" />
+    <Content Include="app\viewmodels\manageSections.js" />
+    <Content Include="app\viewmodels\addnewSection.js" />
+    <Content Include="app\viewmodels\manageExcesses.js" />
+    <Content Include="app\viewmodels\newCommision.js" />
+    <Content Include="app\viewmodels\newExcess.js" />
+    <Content Include="app\viewmodels\print.js" />
+    <Content Include="app\viewmodels\warrantyPopUp.js" />
+    <Content Include="app\viewmodels\manageWarranties.js" />
+    <Content Include="app\viewmodels\newWarranty.js" />
+    <Content Include="app\viewmodels\quote.js" />
+    <Content Include="app\viewmodels\editRating.js" />
+    <Content Include="app\viewmodels\dashboard.js" />
+    <Content Include="app\viewmodels\home.js" />
+    <Content Include="app\viewmodels\insuredItemsModal.js" />
+    <Content Include="app\viewmodels\login2.js" />
+    <Content Include="app\viewmodels\myAccount.js" />
+    <Content Include="app\viewmodels\loginModal.js" />
+    <Content Include="app\viewmodels\manageratings.js" />
+    <Content Include="app\viewmodels\manageCompulsoryFees.js" />
+    <Content Include="app\viewmodels\assignRole.js" />
+    <Content Include="app\viewmodels\newFee.js" />
+    <Content Include="app\viewmodels\editQuote.js" />
+    <Content Include="app\viewmodels\newQuote - Copy %283%29.js" />
+    <Content Include="app\viewmodels\newRole.js" />
+    <Content Include="app\viewmodels\newUser.js" />
+    <Content Include="app\viewmodels\newQuote - Copy %282%29.js" />
+    <Content Include="app\viewmodels\newQuote - Copy.js" />
+    <Content Include="app\viewmodels\reports.js" />
+    <Content Include="app\viewmodels\newLoading.js" />
+    <Content Include="app\viewmodels\newItem.js" />
+    <Content Include="app\viewmodels\newQuote.js" />
+    <Content Include="app\viewmodels\newDiscount.js" />
+    <Content Include="app\viewmodels\manageUserAccounts.js" />
+    <Content Include="app\viewmodels\newSection.js" />
+    <Content Include="app\viewmodels\newRating.js" />
+    <Content Include="app\viewmodels\quotehistory.js" />
+    <Content Include="app\views\editCommision.html" />
+    <Content Include="app\views\editExcess.html" />
+    <Content Include="app\views\getReports.html" />
+    <Content Include="app\views\manageCommisions.html" />
+    <Content Include="app\views\manageUser.html" />
+    <Content Include="app\views\editWarranty.html" />
+    <Content Include="app\views\manageSections.html" />
+    <Content Include="app\views\addnewSection.html" />
+    <Content Include="app\views\manageExcesses.html" />
+    <Content Include="app\views\manageWarranties.html" />
+    <Content Include="app\views\newCommision.html" />
+    <Content Include="app\views\newExcess.html" />
+    <Content Include="app\views\quote.html" />
+    <Content Include="app\views\newQuote - Copy %283%29.html" />
+    <Content Include="app\views\simpleGrid.html" />
+    <Content Include="app\viewmodels\simpleGrid.js" />
+    <Content Include="app\viewmodels\subviews\loadingBuilding.js" />
+    <Content Include="app\viewmodels\subviews\managingRatings.js" />
+    <Content Include="app\viewmodels\subviews\quotesfor.js" />
+    <Content Include="app\viewmodels\test.js" />
+    <Content Include="app\views\editFee.html" />
+    <Content Include="app\views\editItem.html" />
+    <Content Include="app\views\editRating.html" />
+    <Content Include="app\views\dashboard.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\HtmlPage1.html" />
+    <Content Include="app\views\insuredItemsModal.html" />
+    <Content Include="app\views\login2.html" />
+    <Content Include="app\views\myAccount.html" />
+    <Content Include="app\views\newWarranty.html" />
+    <Content Include="app\views\assignRole.html" />
+    <Content Include="app\views\newFee.html" />
+    <Content Include="app\views\editQuote.html" />
+    <Content Include="app\views\newRole.html" />
+    <Content Include="app\views\newUser.html" />
+    <Content Include="app\views\newQuote - Copy %282%29.html" />
+    <Content Include="app\views\newQuote - Copy.html" />
+    <Content Include="app\views\reports.html" />
+    <Content Include="app\views\manageratings.html" />
+    <Content Include="app\views\manageCompulsoryFees.html" />
+    <Content Include="app\views\newLoading.html" />
+    <Content Include="app\views\newItem.html" />
+    <Content Include="app\views\newQuote.html" />
+    <Content Include="app\views\newDiscount.html" />
+    <Content Include="app\views\manageUserAccounts.html" />
+    <Content Include="app\views\newSection.html" />
+    <Content Include="app\views\newRating.html" />
+    <Content Include="app\views\quotehistory.html" />
+    <Content Include="app\views\subviews\loadingBuilding.html" />
+    <Content Include="app\views\subviews\managingRatings.html" />
+    <Content Include="app\views\subviews\quotesfor.html" />
+    <Content Include="app\views\test.html" />
+    <Content Include="app\views\warrantyPopUp.html" />
+    <Content Include="App_Data\Readme.txt" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\1.png" />
+    <Content Include="assets\img\2.png" />
+    <Content Include="assets\img\3.png" />
+    <Content Include="assets\img\4.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.css" />
+    <Content Include="assets\js\dataTables\dataTables.bootstrap.js" />
+    <Content Include="assets\js\dataTables\jquery.dataTables.js" />
+    <Content Include="assets\js\jquery-1.10.2.js" />
+    <Content Include="assets\js\jquery.metisMenu.js" />
+    <Content Include="assets\js\morris\morris-0.4.3.min.css" />
+    <Content Include="assets\js\morris\morris.js" />
+    <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.css" />
+    <Content Include="content\bootstrap.min.css" />
+    <Content Include="content\css\jquery.dataTables.css" />
+    <Content Include="content\css\jquery.dataTables.min.css" />
+    <Content Include="content\css\jquery.dataTables_themeroller.css" />
+    <Content Include="content\css\styles.css" />
+    <Content Include="content\datatables.extensions\AutoFill\css\dataTables.autoFill.css" />
+    <Content Include="content\datatables.extensions\AutoFill\css\dataTables.autoFill.min.css" />
+    <Content Include="content\datatables.extensions\AutoFill\images\filler.png" />
+    <Content Include="content\datatables.extensions\ColReorder\css\dataTables.colReorder.css" />
+    <Content Include="content\datatables.extensions\ColReorder\css\dataTables.colReorder.min.css" />
+    <Content Include="content\datatables.extensions\ColReorder\images\insert.png" />
+    <Content Include="content\datatables.extensions\ColVis\css\dataTables.colVis.css" />
+    <Content Include="content\datatables.extensions\ColVis\css\dataTables.colvis.jqueryui.css" />
+    <Content Include="content\datatables.extensions\ColVis\css\dataTables.colVis.min.css" />
+    <Content Include="content\datatables.extensions\FixedColumns\css\dataTables.fixedColumns.css" />
+    <Content Include="content\datatables.extensions\FixedColumns\css\dataTables.fixedColumns.min.css" />
+    <Content Include="content\datatables.extensions\FixedHeader\css\dataTables.fixedHeader.css" />
+    <Content Include="content\datatables.extensions\FixedHeader\css\dataTables.fixedHeader.min.css" />
+    <Content Include="content\datatables.extensions\KeyTable\css\dataTables.keyTable.css" />
+    <Content Include="content\datatables.extensions\KeyTable\css\dataTables.keyTable.min.css" />
+    <Content Include="content\datatables.extensions\Responsive\css\dataTables.responsive.css" />
+    <Content Include="content\datatables.extensions\Scroller\css\dataTables.scroller.css" />
+    <Content Include="content\datatables.extensions\Scroller\css\dataTables.scroller.min.css" />
+    <Content Include="content\datatables.extensions\Scroller\images\loading-background.png" />
+    <Content Include="content\datatables.extensions\TableTools\css\dataTables.tableTools.css" />
+    <Content Include="content\datatables.extensions\TableTools\css\dataTables.tableTools.min.css" />
+    <Content Include="content\datatables.extensions\TableTools\images\background.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\collection.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\collection_hover.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\copy.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\copy_hover.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\csv.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\csv_hover.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\pdf.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\pdf_hover.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\print.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\print_hover.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\xls.png" />
+    <Content Include="content\datatables.extensions\TableTools\images\xls_hover.png" />
+    <Content Include="content\durandal.css" />
+    <Content Include="content\font-awesome.css" />
+    <Content Include="content\font-awesome.min.css" />
+    <Content Include="content\images\back_disabled.png" />
+    <Content Include="content\images\back_enabled.png" />
+    <Content Include="content\images\back_enabled_hover.png" />
+    <Content Include="content\images\favicon.ico" />
+    <Content Include="content\images\forward_disabled.png" />
+    <Content Include="content\images\forward_enabled.png" />
+    <Content Include="content\images\forward_enabled_hover.png" />
+    <Content Include="content\images\icon.png" />
+    <Content Include="content\images\ios-startup-image-landscape.png" />
+    <Content Include="content\images\ios-startup-image-portrait.png" />
+    <Content Include="content\images\nfb.jpg" />
+    <Content Include="content\images\sort_asc.png" />
+    <Content Include="content\images\sort_asc_disabled.png" />
+    <Content Include="content\images\sort_both.png" />
+    <Content Include="content\images\sort_desc.png" />
+    <Content Include="content\images\sort_desc_disabled.png" />
+    <Content Include="content\images\Untitled.jpg" />
+    <Content Include="content\jqueryui\images\animated-overlay.gif" />
+    <Content Include="content\jqueryui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="content\jqueryui\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="content\jqueryui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="content\jqueryui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="content\jqueryui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="content\jqueryui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="content\jqueryui\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="content\jqueryui\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="content\jqueryui\images\ui-icons_222222_256x240.png" />
+    <Content Include="content\jqueryui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="content\jqueryui\images\ui-icons_454545_256x240.png" />
+    <Content Include="content\jqueryui\images\ui-icons_888888_256x240.png" />
+    <Content Include="content\jqueryui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="content\jqueryui\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="content\KoGrid.css" />
+    <Content Include="content\style.css" />
+    <Content Include="content\toastr.css" />
+    <Content Include="content\toastr.min.css" />
+    <Content Include="css\bootstrap-rtl.css" />
+    <Content Include="css\bootstrap-rtl.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\plugins\morris.css" />
+    <Content Include="css\print-preview.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\printingMt.css" />
+    <Content Include="css\sb-admin-rtl.css" />
+    <Content Include="css\sb-admin.css" />
+    <Content Include="css\standard-style.css" />
+    <Content Include="css\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fia.png" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\fia.png" />
+    <Content Include="images\Hollard.png" />
+    <Content Include="images\nfb - Copy.png" />
+    <Content Include="images\nfb.png" />
+    <Content Include="images\NFB_300_147_90.jpg" />
+    <Content Include="images\printFriendly.gif" />
+    <Content Include="images\quote.png" />
+    <Content Include="images\smaller\fia.png" />
+    <Content Include="images\smaller\Hollard.png" />
+    <Content Include="images\smaller\NFB_300_147_90.png" />
+    <Content Include="images\sorterimages\asc.png" />
+    <Content Include="images\sorterimages\bg.png" />
+    <Content Include="images\sorterimages\desc.png" />
+    <Content Include="index.html" />
+    <Content Include="scripts\almond-custom.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\datatables.extensions\AutoFill\js\dataTables.autoFill.js" />
+    <Content Include="scripts\datatables.extensions\AutoFill\js\dataTables.autoFill.min.js" />
+    <Content Include="scripts\datatables.extensions\AutoFill\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\ColReorder\js\dataTables.colReorder.js" />
+    <Content Include="scripts\datatables.extensions\ColReorder\js\dataTables.colReorder.min.js" />
+    <Content Include="scripts\datatables.extensions\ColReorder\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\ColVis\js\dataTables.colVis.js" />
+    <Content Include="scripts\datatables.extensions\ColVis\js\dataTables.colVis.min.js" />
+    <Content Include="scripts\datatables.extensions\ColVis\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\FixedColumns\js\dataTables.fixedColumns.js" />
+    <Content Include="scripts\datatables.extensions\FixedColumns\js\dataTables.fixedColumns.min.js" />
+    <Content Include="scripts\datatables.extensions\FixedHeader\js\dataTables.fixedHeader.js" />
+    <Content Include="scripts\datatables.extensions\FixedHeader\js\dataTables.fixedHeader.min.js" />
+    <Content Include="scripts\datatables.extensions\FixedHeader\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\KeyTable\js\dataTables.keyTable.js" />
+    <Content Include="scripts\datatables.extensions\KeyTable\js\dataTables.keyTable.min.js" />
+    <Content Include="scripts\datatables.extensions\KeyTable\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\Responsive\js\dataTables.responsive.js" />
+    <Content Include="scripts\datatables.extensions\Responsive\js\dataTables.responsive.min.js" />
+    <Content Include="scripts\datatables.extensions\Scroller\js\dataTables.scroller.js" />
+    <Content Include="scripts\datatables.extensions\Scroller\js\dataTables.scroller.min.js" />
+    <Content Include="scripts\datatables.extensions\Scroller\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\TableTools\js\dataTables.tableTools.js" />
+    <Content Include="scripts\datatables.extensions\TableTools\js\dataTables.tableTools.min.js" />
+    <Content Include="scripts\datatables.extensions\TableTools\Readme.txt" />
+    <Content Include="scripts\datatables.extensions\TableTools\swf\copy_csv_xls.swf" />
+    <Content Include="scripts\datatables.extensions\TableTools\swf\copy_csv_xls_pdf.swf" />
+    <Content Include="scripts\durandal\activator.js" />
+    <Content Include="scripts\durandal\app.js" />
+    <Content Include="scripts\durandal\binder.js" />
+    <Content Include="scripts\durandal\composition.js" />
+    <Content Include="scripts\durandal\events.js" />
+    <Content Include="scripts\durandal\plugins\dialog.js" />
+    <Content Include="scripts\durandal\plugins\history.js" />
+    <Content Include="scripts\durandal\plugins\http.js" />
+    <Content Include="scripts\durandal\plugins\observable.js" />
+    <Content Include="scripts\durandal\plugins\router.js" />
+    <Content Include="scripts\durandal\plugins\serializer.js" />
+    <Content Include="scripts\durandal\plugins\widget.js" />
+    <Content Include="scripts\durandal\system.js" />
+    <Content Include="scripts\durandal\transitions\entrance.js" />
+    <Content Include="scripts\durandal\viewEngine.js" />
+    <Content Include="scripts\durandal\viewLocator.js" />
+    <Content Include="content\toastr.scss" />
+    <Content Include="content\toastr.less" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\datatables.extensions\Responsive\Readme.md" />
+    <Content Include="content\images\Sorting icons.psd" />
+    <Content Include="content\datatables.extensions\TableTools\images\psd\printer.psd" />
+    <Content Include="content\datatables.extensions\TableTools\images\psd\file_types.psd" />
+    <Content Include="content\datatables.extensions\TableTools\images\psd\copy document.psd" />
+    <Content Include="content\datatables.extensions\TableTools\images\psd\collection.psd" />
+    <Content Include="content\datatables.extensions\Responsive\css\dataTables.responsive.scss" />
+    <Content Include="App_Data\authcert.cer" />
+    <Content Include="App_Data\localhost.pfx" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
+    <None Include="Properties\PublishProfiles\published.pubxml" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <None Include="scripts\jquery-1.6.2-vsdoc.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery-1.9.1.min.map" />
+    <None Include="scripts\jquery-2.1.3-vsdoc.js" />
+    <Content Include="scripts\jquery-2.1.3.js" />
+    <Content Include="scripts\jquery-2.1.3.min.js" />
+    <Content Include="scripts\jquery-latest.js" />
+    <Content Include="scripts\jquery.dataTables.js" />
+    <Content Include="scripts\jquery.dataTables.min.js" />
+    <Content Include="scripts\jquery.metadata.js" />
+    <Content Include="scripts\jquery.tablesorter.js" />
+    <Content Include="scripts\jquery.tablesorter.min.js" />
+    <Content Include="scripts\knockout-2.0.0.debug.js" />
+    <Content Include="scripts\knockout-2.0.0.js" />
+    <Content Include="scripts\knockout-3.2.0.debug.js" />
+    <Content Include="scripts\knockout-3.2.0.js" />
+    <Content Include="scripts\koGrid-2.1.1.debug.js" />
+    <Content Include="scripts\koGrid-2.1.1.js" />
+    <Content Include="scripts\moment-with-locales.js" />
+    <Content Include="scripts\moment-with-locales.min.js" />
+    <Content Include="scripts\moment.js" />
+    <Content Include="scripts\moment.min.js" />
+    <Content Include="scripts\npm.js" />
+    <Content Include="scripts\Pager.js" />
+    <Content Include="scripts\r.js" />
+    <Content Include="scripts\require.js" />
+    <Content Include="scripts\start.debug.js" />
+    <Content Include="scripts\Start.js" />
+    <Content Include="scripts\text.js" />
+    <Content Include="scripts\toastr.js" />
+    <Content Include="scripts\toastr.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HttpMessages.cs" />
+    <Compile Include="Controllers\StQuoteDataController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\CryptographyHelper.cs" />
+    <Compile Include="Security\CustomPrincipal.cs" />
+    <Compile Include="Security\HttpsGuard.cs" />
+    <Compile Include="Security\IdentityProvider.cs" />
+    <Compile Include="Security\PasswordHash.cs" />
+    <Compile Include="Security\Token.cs" />
+    <Compile Include="Security\TokenInspector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="content\bootstrap.css.map" />
+    <Content Include="scripts\jquery-2.1.3.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="QuoteReports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QsClasses\QsClasses.csproj">
+      <Project>{5e0e5194-3016-421d-afdf-e007cdacd5f1}</Project>
+      <Name>QsClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QsDataAccess\QsDataAccess.csproj">
+      <Project>{58d72e32-0321-4fbc-b372-06645ee74da5}</Project>
+      <Name>QsDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QsSecurity\QsSecurity.csproj">
+      <Project>{418059cf-9ad4-41be-8a09-2271d2e6471e}</Project>
+      <Name>QsSecurity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55815</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55815/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

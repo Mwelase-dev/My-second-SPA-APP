@@ -1,0 +1,55 @@
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Debug\QsSecurity.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsSecurity.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Debug\QsSecurity.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\obj\Debug\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\itextsharp.dll
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\itextsharp.xml
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsSecurity.dll
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsSecurity.pdb
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsClasses.dll
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsDataAccess.dll
+C:\Projects\Short Term\QsSecurity\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Short Term\QsSecurity\bin\Debug\itextsharp.dll
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsClasses.pdb
+C:\Projects\Short Term\QsSecurity\bin\Debug\QsDataAccess.pdb
+C:\Projects\Short Term\QsSecurity\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Short Term\QsSecurity\bin\Debug\itextsharp.xml
+C:\Projects\Short Term\QsSecurity\obj\Debug\QsSecurity.csprojResolveAssemblyReference.cache
+C:\Projects\Short Term\QsSecurity\obj\Debug\QsSecurity.dll
+C:\Projects\Short Term\QsSecurity\obj\Debug\QsSecurity.pdb
+D:\Projects\NFB Short Term\NFBST Quote System\QsSecurity\bin\Debug\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsSecurity.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsSecurity.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsClasses.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsDataAccess.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.xmlworker.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsClasses.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsDataAccess.pdb
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.xml
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.csprojResolveAssemblyReference.cache
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.dll
+D:\Projects\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsSecurity.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsSecurity.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsClasses.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsDataAccess.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsClasses.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\QsDataAccess.pdb
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\bin\Debug\itextsharp.xml
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.csprojResolveAssemblyReference.cache
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.dll
+C:\Users\Mwelase\Documents\Pyrex[Mwe]\NFB Short Term\nfb-st-o-quote\Source\QsSecurity\obj\Debug\QsSecurity.pdb
